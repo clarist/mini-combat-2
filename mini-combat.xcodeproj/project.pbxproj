@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B384ECD1CAE11690041B5DB /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B384ECC1CAE11690041B5DB /* Minecraft.ttf */; };
 		8B5EF9561CACC68F00090A51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5EF9551CACC68F00090A51 /* AppDelegate.swift */; };
 		8B5EF9581CACC68F00090A51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5EF9571CACC68F00090A51 /* ViewController.swift */; };
 		8B5EF95B1CACC68F00090A51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B5EF9591CACC68F00090A51 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		8B5EF9601CACC69000090A51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B5EF95E1CACC69000090A51 /* LaunchScreen.storyboard */; };
 		8B5EF96B1CACC69000090A51 /* mini_combatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5EF96A1CACC69000090A51 /* mini_combatTests.swift */; };
 		8B5EF9761CACC69000090A51 /* mini_combatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5EF9751CACC69000090A51 /* mini_combatUITests.swift */; };
+		8B5EF9841CACCFB700090A51 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5EF9831CACCFB700090A51 /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B384ECC1CAE11690041B5DB /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
 		8B5EF9521CACC68F00090A51 /* mini-combat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mini-combat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B5EF9551CACC68F00090A51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B5EF9571CACC68F00090A51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		8B5EF9711CACC69000090A51 /* mini-combatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mini-combatUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B5EF9751CACC69000090A51 /* mini_combatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mini_combatUITests.swift; sourceTree = "<group>"; };
 		8B5EF9771CACC69000090A51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B5EF9831CACCFB700090A51 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +104,11 @@
 				8B5EF9551CACC68F00090A51 /* AppDelegate.swift */,
 				8B5EF9571CACC68F00090A51 /* ViewController.swift */,
 				8B5EF9591CACC68F00090A51 /* Main.storyboard */,
+				8B5EF9831CACCFB700090A51 /* Character.swift */,
 				8B5EF95C1CACC68F00090A51 /* Assets.xcassets */,
 				8B5EF95E1CACC69000090A51 /* LaunchScreen.storyboard */,
 				8B5EF9611CACC69000090A51 /* Info.plist */,
+				8B384ECC1CAE11690041B5DB /* Minecraft.ttf */,
 			);
 			path = "mini-combat";
 			sourceTree = "<group>";
@@ -231,6 +237,7 @@
 			files = (
 				8B5EF9601CACC69000090A51 /* LaunchScreen.storyboard in Resources */,
 				8B5EF95D1CACC68F00090A51 /* Assets.xcassets in Resources */,
+				8B384ECD1CAE11690041B5DB /* Minecraft.ttf in Resources */,
 				8B5EF95B1CACC68F00090A51 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B5EF9841CACCFB700090A51 /* Character.swift in Sources */,
 				8B5EF9581CACC68F00090A51 /* ViewController.swift in Sources */,
 				8B5EF9561CACC68F00090A51 /* AppDelegate.swift in Sources */,
 			);
@@ -484,6 +492,7 @@
 				8B5EF97C1CACC69000090A51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B5EF97D1CACC69000090A51 /* Build configuration list for PBXNativeTarget "mini-combatTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +501,7 @@
 				8B5EF97F1CACC69000090A51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B5EF9801CACC69000090A51 /* Build configuration list for PBXNativeTarget "mini-combatUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +510,7 @@
 				8B5EF9821CACC69000090A51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
