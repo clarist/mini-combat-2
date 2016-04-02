@@ -61,10 +61,10 @@ class Character {
                     _combatStatus = "\(self.name) has missed!"
                 }
             } else {
-                _combatStatus = "\(target.name) is dead. :("
+                _combatStatus = "\(target.name) is dead. :)"
             }
         } else {
-                self._combatStatus = "\(self.name) is dead and can't attack!"
+                self._combatStatus = "\(self.name) is dead and can't attack! :("
             }
     }
 }

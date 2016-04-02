@@ -93,7 +93,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Prepare thine self!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uU3-xE-c0D">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Prepare thyself!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uU3-xE-c0D">
                                 <rect key="frame" x="137" y="290" width="330" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="ReP-91-Nmh"/>
@@ -123,7 +123,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="blackButton" destination="Dk1-4m-beC" id="t9E-3q-eQS"/>
                         <outlet property="blueLabelText" destination="uU3-xE-c0D" id="Pai-WI-HWr"/>
+                        <outlet property="brownButton" destination="wOy-dq-LsW" id="YsC-G3-tIP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
