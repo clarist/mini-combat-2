@@ -74,6 +74,7 @@ class Character {
             }
         } else {
                 self._combatStatus = "\(self.name) is dead and can't attack! :("
+                _areYouAWinner = false
             }
     }
 }

@@ -30,34 +30,36 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onMonsterButtonPressed(sender: UIButton) {
-            let d20 = Int(arc4random_uniform(20))
-            let d6 = Int(arc4random_uniform(6))
+            let d20 = Int(arc4random_uniform(19) + 1)
+            let d6 = Int(arc4random_uniform(5) + 1)
             
             monster.tryAttack(player, attackStrength: d6, hitRoll: d20)
             blueLabelText.text = monster.combatStatus
         
             blackButton.enabled = false
             blackButtonTimer()
+            isThereAWinner()
         }
     
     @IBAction func onPlayerButtonPressed(sender: UIButton) {
-            let d20 = Int(arc4random_uniform(20))
-            let d6 = Int(arc4random_uniform(6))
+            let d20 = Int(arc4random_uniform(19) + 1)
+            let d6 = Int(arc4random_uniform(5) + 1)
             
             player.tryAttack(monster, attackStrength: d6, hitRoll: d20)
             blueLabelText.text = player.combatStatus
         
             brownButton.enabled = false
             brownButtonTimer()
+            isThereAWinner()
     }
 
     func blackButtonTimer() {
-        NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: #selector(ViewController.enableBlackButton), userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(ViewController.enableBlackButton), userInfo: nil, repeats: false)
         
     }
     
     func brownButtonTimer() {
-        NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: #selector(ViewController.enableBrownButton), userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(ViewController.enableBrownButton), userInfo: nil, repeats: false)
         
     }
 
@@ -74,6 +76,18 @@ class ViewController: UIViewController {
             brownButton.enabled = true
         } else {
             print("brownButton already enabled")
+        }
+    }
+    
+    func isThereAWinner() {
+        if player.areYouAWinner == false && monster.areYouAWinner == false {
+            winnerLabel.text = ""
+        } else if player.areYouAWinner == true {
+                winnerLabel.text = "PLAYER WINS!"
+            } else if monster.areYouAWinner == true {
+                winnerLabel.text = "MONSTER WINS!"
+        } else {
+            winnerLabel.text = "you're all losers"
         }
     }
 }
