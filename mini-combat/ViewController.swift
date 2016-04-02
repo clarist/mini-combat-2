@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var blueLabelText: UILabel!
     @IBOutlet weak var blackButton: UIButton!
     @IBOutlet weak var brownButton: UIButton!
+    @IBOutlet weak var winnerLabel: UILabel!
     
     
     
@@ -24,6 +25,7 @@ class ViewController: UIViewController {
         
         player = Character(startingHP: 20, startingPower: 5, name: "Player")
         monster = Character(startingHP: 15, startingPower: 6, name: "Monster")
+        winnerLabel.text = ""
 
     }
     
@@ -33,8 +35,9 @@ class ViewController: UIViewController {
             
             monster.tryAttack(player, attackStrength: d6, hitRoll: d20)
             blueLabelText.text = monster.combatStatus
-        blackButton.enabled = false
-        blackButtonTimer()
+        
+            blackButton.enabled = false
+            blackButtonTimer()
         }
     
     @IBAction func onPlayerButtonPressed(sender: UIButton) {
@@ -43,8 +46,9 @@ class ViewController: UIViewController {
             
             player.tryAttack(monster, attackStrength: d6, hitRoll: d20)
             blueLabelText.text = player.combatStatus
-        brownButton.enabled = false
-        brownButtonTimer()
+        
+            brownButton.enabled = false
+            brownButtonTimer()
     }
 
     func blackButtonTimer() {
@@ -72,6 +76,5 @@ class ViewController: UIViewController {
             print("brownButton already enabled")
         }
     }
-
 }
 

@@ -13,6 +13,7 @@ class Character {
     private var _attackPower: Int
     private var _name: String
     private var _combatStatus: String
+    private var _areYouAWinner: Bool
 
     var hitPoints: Int {
         get {
@@ -39,11 +40,18 @@ class Character {
         }
     }
     
+    var areYouAWinner: Bool {
+        get {
+            return _areYouAWinner
+        }
+    }
+    
     init(startingHP: Int, startingPower: Int, name: String) {
         self._hitPoints = startingHP
         self._attackPower = startingPower
         self._name = name
         self._combatStatus = ""
+        self._areYouAWinner = false
         
     }
     
@@ -62,6 +70,7 @@ class Character {
                 }
             } else {
                 _combatStatus = "\(target.name) is dead. :)"
+                _areYouAWinner = true
             }
         } else {
                 self._combatStatus = "\(self.name) is dead and can't attack! :("
