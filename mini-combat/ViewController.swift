@@ -17,15 +17,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var blackButton: UIButton!
     @IBOutlet weak var brownButton: UIButton!
     @IBOutlet weak var winnerLabel: UILabel!
-    
-    
+    @IBOutlet weak var restartGameButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        player = Character(startingHP: 20, startingPower: 5, name: "Player")
-        monster = Character(startingHP: 15, startingPower: 6, name: "Monster")
-        winnerLabel.text = ""
+        newGame()
 
     }
     
@@ -51,6 +48,10 @@ class ViewController: UIViewController {
             brownButton.enabled = false
             brownButtonTimer()
             isThereAWinner()
+    }
+    
+    @IBAction func restartGameButtonPressed(sender: UIButton) {
+        newGame()
     }
 
     func blackButtonTimer() {
@@ -79,16 +80,13 @@ class ViewController: UIViewController {
         }
     }
     
-    func isThereAWinner() {
-        if player.areYouAWinner == false && monster.areYouAWinner == false {
-            winnerLabel.text = ""
-        } else if player.areYouAWinner == true {
-                winnerLabel.text = "PLAYER WINS!"
-            } else if monster.areYouAWinner == true {
-                winnerLabel.text = "MONSTER WINS!"
-        } else {
-            winnerLabel.text = "you're all losers"
+
+    
+    func newGame() {
+        player = Character(startingHP: 20, startingPower: 5, name: "Player")
+        monster = Character(startingHP: 15, startingPower: 6, name: "Monster")
+        winnerLabel.text = ""
+        blueLabelText.text = "Prepare thyself for battle!"
         }
-    }
 }
 

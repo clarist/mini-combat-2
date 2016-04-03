@@ -110,6 +110,19 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hz-l1-Xhx">
+                                <rect key="frame" x="253" y="392" width="95" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0n3-Nx-Yxq"/>
+                                    <constraint firstAttribute="width" constant="95" id="wGc-Pd-6S9"/>
+                                </constraints>
+                                <state key="normal" title="Restart!" backgroundImage="player2attackbtn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="restartGameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y9x-ts-5L4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -119,8 +132,10 @@
                             <constraint firstItem="Sc1-od-K00" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ga5-ai-DCU"/>
                             <constraint firstItem="uU3-xE-c0D" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="HV1-N6-RQZ"/>
                             <constraint firstItem="gn4-hI-eZ3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KEA-3a-WUK"/>
+                            <constraint firstItem="7hz-l1-Xhx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OvV-9B-aWb"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5rg-IE-XK1" secondAttribute="bottom" constant="9" id="c3U-us-RuZ"/>
                             <constraint firstItem="uU3-xE-c0D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dOY-89-Wq2"/>
+                            <constraint firstItem="7hz-l1-Xhx" firstAttribute="top" secondItem="gn4-hI-eZ3" secondAttribute="bottom" constant="65" id="dx2-8r-5nR"/>
                             <constraint firstItem="iHG-e0-rmx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="evM-fQ-esq"/>
                             <constraint firstItem="Sc1-od-K00" firstAttribute="top" secondItem="gn4-hI-eZ3" secondAttribute="bottom" constant="10" id="igX-3V-LrT"/>
                             <constraint firstItem="AB5-it-4Mr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iu5-cf-zQk"/>
@@ -135,6 +150,7 @@
                         <outlet property="blackButton" destination="Dk1-4m-beC" id="t9E-3q-eQS"/>
                         <outlet property="blueLabelText" destination="uU3-xE-c0D" id="Pai-WI-HWr"/>
                         <outlet property="brownButton" destination="wOy-dq-LsW" id="YsC-G3-tIP"/>
+                        <outlet property="restartGameButton" destination="7hz-l1-Xhx" id="HHr-wU-hYf"/>
                         <outlet property="winnerLabel" destination="Sc1-od-K00" id="YhS-Rn-jQ8"/>
                     </connections>
                 </viewController>
