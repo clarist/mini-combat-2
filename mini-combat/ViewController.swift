@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
     var player: Character!
     var monster: Character!
+    var gameObject: Game!
+    var dice: Dice!
     
     @IBOutlet weak var blueLabelText: UILabel!
     @IBOutlet weak var blackButton: UIButton!
@@ -23,19 +25,25 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         newGame()
+        
 
     }
     
     @IBAction func onMonsterButtonPressed(sender: UIButton) {
-            let d20 = Int(arc4random_uniform(19) + 1)
-            let d6 = Int(arc4random_uniform(5) + 1)
-            
-            monster.tryAttack(player, attackStrength: d6, hitRoll: d20)
-            blueLabelText.text = monster.combatStatus
+        gameObject.combatLoop(monster, target: player, button: blackButton, dice: dice)
         
-            blackButton.enabled = false
-            blackButtonTimer()
-            isThereAWinner()
+        
+
+        
+        //            let d20 = Int(arc4random_uniform(19) + 1)
+//            let d6 = Int(arc4random_uniform(5) + 1)
+//            
+//            monster.tryAttack(player, attackStrength: d6, hitRoll: d20)
+//            blueLabelText.text = monster.combatStatus
+//        
+//            blackButton.enabled = false
+//            blackButtonTimer()
+//            isThereAWinner()
         }
     
     @IBAction func onPlayerButtonPressed(sender: UIButton) {
@@ -47,7 +55,7 @@ class ViewController: UIViewController {
         
             brownButton.enabled = false
             brownButtonTimer()
-            isThereAWinner()
+//            isThereAWinner()
     }
     
     @IBAction func restartGameButtonPressed(sender: UIButton) {
@@ -85,7 +93,7 @@ class ViewController: UIViewController {
     func newGame() {
         player = Character(startingHP: 20, startingPower: 5, name: "Player")
         monster = Character(startingHP: 15, startingPower: 6, name: "Monster")
-        winnerLabel.text = ""
+        winnerLabel.text = gameObject.winnerStatus
         blueLabelText.text = "Prepare thyself for battle!"
         }
 }

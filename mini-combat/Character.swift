@@ -15,6 +15,7 @@ class Character {
     private var _combatStatus: String
     private var _areYouAWinner: Bool
 
+
     var hitPoints: Int {
         get {
             return _hitPoints
