@@ -119,6 +119,9 @@
                                 <state key="normal" title="Restart!" backgroundImage="player2attackbtn">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onRestartButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bP2-LM-3tf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -147,6 +150,7 @@
                         <outlet property="blackButton" destination="Dk1-4m-beC" id="t9E-3q-eQS"/>
                         <outlet property="blueLabelText" destination="uU3-xE-c0D" id="Pai-WI-HWr"/>
                         <outlet property="brownButton" destination="wOy-dq-LsW" id="YsC-G3-tIP"/>
+                        <outlet property="restartButton" destination="7hz-l1-Xhx" id="Hj3-SW-sMH"/>
                         <outlet property="winnerLabel" destination="Sc1-od-K00" id="YhS-Rn-jQ8"/>
                     </connections>
                 </viewController>
