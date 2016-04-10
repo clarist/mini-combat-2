@@ -9,6 +9,9 @@
         <mutableArray key="Minecraft.ttf">
             <string>Minecraft</string>
             <string>Minecraft</string>
+            <string>Minecraft</string>
+            <string>Minecraft</string>
+            <string>Minecraft</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -76,7 +79,10 @@
                                             <constraint firstAttribute="height" constant="46" id="5z1-tD-jqI"/>
                                             <constraint firstAttribute="width" constant="125" id="ZcD-jF-GPf"/>
                                         </constraints>
-                                        <state key="normal" image="player2attackbtn"/>
+                                        <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="18"/>
+                                        <state key="normal" backgroundImage="player2attackbtn">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="onMonsterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cGI-au-sQx"/>
                                         </connections>
@@ -87,7 +93,10 @@
                                             <constraint firstAttribute="height" constant="46" id="8lN-Dr-bg6"/>
                                             <constraint firstAttribute="width" constant="125" id="s6p-Vf-1Rj"/>
                                         </constraints>
-                                        <state key="normal" image="player1attackbtn"/>
+                                        <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="18"/>
+                                        <state key="normal" backgroundImage="player1attackbtn">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="onPlayerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xpl-t8-wbu"/>
                                         </connections>
@@ -116,6 +125,7 @@
                                     <constraint firstAttribute="height" constant="40" id="0n3-Nx-Yxq"/>
                                     <constraint firstAttribute="width" constant="95" id="wGc-Pd-6S9"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="15"/>
                                 <state key="normal" title="Restart!" backgroundImage="player2attackbtn">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>

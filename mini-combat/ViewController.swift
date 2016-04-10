@@ -22,8 +22,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        newGame()
-        
+        newGame()        
     }
     
     @IBAction func onMonsterButtonPressed(sender: UIButton) {
@@ -34,6 +33,7 @@ class ViewController: UIViewController {
         blueLabelText.text = monster.combatStatus
         
         blackButton.enabled = false
+        blackButton.setTitle("Wait...", forState: .Normal)
         blackButtonTimer()
         isThereAWinner()
     }
@@ -46,6 +46,7 @@ class ViewController: UIViewController {
         blueLabelText.text = player.combatStatus
         
         brownButton.enabled = false
+        brownButton.setTitle("Wait...", forState: .Normal)
         brownButtonTimer()
         isThereAWinner()
     }
@@ -67,6 +68,7 @@ class ViewController: UIViewController {
     func enableBlackButton() {
         if blackButton.enabled == false {
             blackButton.enabled = true
+            blackButton.setTitle("Attack!", forState: .Normal)
         } else {
             print("blackbutton already enabled")
         }
@@ -75,6 +77,7 @@ class ViewController: UIViewController {
     func enableBrownButton() {
         if brownButton.enabled == false {
             brownButton.enabled = true
+            brownButton.setTitle("Attack!", forState: .Normal)
         } else {
             print("brownButton already enabled")
         }
@@ -100,5 +103,7 @@ class ViewController: UIViewController {
         winnerLabel.text = ""
         blueLabelText.text = "Prepare thyself for battle!"
         restartButton.hidden = true
+        brownButton.setTitle("Attack!", forState: .Normal)
+        blackButton.setTitle("Attack!", forState: .Normal)
     }
 }
