@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8B384ECD1CAE11690041B5DB /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B384ECC1CAE11690041B5DB /* Minecraft.ttf */; };
-		8B384ECF1CB032770041B5DB /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B384ECE1CB032770041B5DB /* Game.swift */; };
 		8B5EF9561CACC68F00090A51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5EF9551CACC68F00090A51 /* AppDelegate.swift */; };
 		8B5EF9581CACC68F00090A51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5EF9571CACC68F00090A51 /* ViewController.swift */; };
 		8B5EF95B1CACC68F00090A51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B5EF9591CACC68F00090A51 /* Main.storyboard */; };
@@ -39,7 +38,6 @@
 
 /* Begin PBXFileReference section */
 		8B384ECC1CAE11690041B5DB /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
-		8B384ECE1CB032770041B5DB /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		8B5EF9521CACC68F00090A51 /* mini-combat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mini-combat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B5EF9551CACC68F00090A51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B5EF9571CACC68F00090A51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 				8B5EF9551CACC68F00090A51 /* AppDelegate.swift */,
 				8B5EF9571CACC68F00090A51 /* ViewController.swift */,
 				8B5EF9831CACCFB700090A51 /* Character.swift */,
-				8B384ECE1CB032770041B5DB /* Game.swift */,
 				8B5EF95C1CACC68F00090A51 /* Assets.xcassets */,
 				8B5EF95E1CACC69000090A51 /* LaunchScreen.storyboard */,
 				8B5EF9611CACC69000090A51 /* Info.plist */,
@@ -273,7 +270,6 @@
 				8B5EF9581CACC68F00090A51 /* ViewController.swift in Sources */,
 				8B6375231CB6BA870021C5F2 /* Dice.swift in Sources */,
 				8B5EF9561CACC68F00090A51 /* AppDelegate.swift in Sources */,
-				8B384ECF1CB032770041B5DB /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

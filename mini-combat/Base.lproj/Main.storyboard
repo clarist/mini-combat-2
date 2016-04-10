@@ -101,13 +101,13 @@
                                     <constraint firstAttribute="width" constant="330" id="zLF-Az-OAN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sc1-od-K00">
                                 <rect key="frame" x="173" y="335" width="254" height="73"/>
                                 <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="25"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hz-l1-Xhx">
@@ -119,9 +119,6 @@
                                 <state key="normal" title="Restart!" backgroundImage="player2attackbtn">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="restartGameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y9x-ts-5L4"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -150,7 +147,6 @@
                         <outlet property="blackButton" destination="Dk1-4m-beC" id="t9E-3q-eQS"/>
                         <outlet property="blueLabelText" destination="uU3-xE-c0D" id="Pai-WI-HWr"/>
                         <outlet property="brownButton" destination="wOy-dq-LsW" id="YsC-G3-tIP"/>
-                        <outlet property="restartGameButton" destination="7hz-l1-Xhx" id="HHr-wU-hYf"/>
                         <outlet property="winnerLabel" destination="Sc1-od-K00" id="YhS-Rn-jQ8"/>
                     </connections>
                 </viewController>
